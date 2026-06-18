@@ -740,6 +740,10 @@
 
                             <ul class="space-y-2 mb-4 text-xs text-coffee-300 font-sans flex-grow">
                                 <li class="flex items-start">
+                                    <i class="fa-solid fa-fire text-orange-500 mt-0.5 mr-2 w-3 text-center"></i>
+                                    <span><strong>Roasting:</strong> <span class="text-gold-500 font-semibold">${roastLevel}</span></span>
+                                </li>
+                                <li class="flex items-start">
                                     <i class="fa-solid fa-leaf text-green-700 mt-0.5 mr-2 w-3 text-center"></i>
                                     <span><strong>Notes:</strong> <span class="text-coffee-100 italic">${finalNotes}</span></span>
                                 </li>
@@ -786,11 +790,11 @@
                             <strong>KOMPOSISI & BEAN SPECS:</strong><br>
                             ${ratio1}% ${fullName1} (${metrics1.varietas}, ${metrics1.elevasi})<br>
                             ${ratio2}% ${fullName2} (${metrics2.varietas}, ${metrics2.elevasi})<br>
-                            Process: ${processMethod} | Resting Optimal: ${degassing}
+                            Roast: <strong>${roastLevel}</strong> | Process: ${processMethod}
                         </div>
                         
                         <div class="text-[8px] text-coffee-800 font-mono mb-2 bg-gold-500/10 px-2 py-1.5 border border-gold-500/30 rounded leading-tight">
-                            <strong>BREW GUIDE (${roastLevel} - ${brewGuide.method}):</strong><br>
+                            <strong>BREW GUIDE (${brewGuide.method}):</strong><br>
                             Suhu: ${brewGuide.temp} | Rasio: ${brewGuide.ratio}<br>
                             Grind: ${brewGuide.grind} | Waktu Ekstraksi: ${brewGuide.time}
                         </div>
